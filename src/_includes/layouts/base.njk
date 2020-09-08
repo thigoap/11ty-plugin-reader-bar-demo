@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo for Eleventy Reader Bar Plugin</title>
+  <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="reader-bar-start"> <!-- div to style the reader bar -->
+    
+    {% include '../components/header.njk' %}
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    {% include '../components/footer.njk' %}
+  
+  </div> <!-- end of the div, wrapping the entire page -->
+  
+  {% readerBar "0px" %} <!-- short code to hide the reader bar in the base template / index page -->
+
+</body>
+</html>

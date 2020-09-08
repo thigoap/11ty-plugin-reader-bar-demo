@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+
+<h2>{{ title }}</h2>
+<h4>{{ subtitle }}</h4>
+
+<div class="content">
+  {{ content | safe }}
+</div>
+
+{% readerBar "8px" "lightgray" "red" %}

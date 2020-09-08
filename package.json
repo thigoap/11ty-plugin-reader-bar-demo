@@ -1,0 +1,17 @@
+{
+  "name": "11ty-plugin-reader-bar-demo",
+  "version": "1.0.0",
+  "description": "Demo site for the Eleventy Reader Bar Plugin",
+  "main": ".eleventy.js",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build:gh": "eleventy --pathprefix=11ty-plugin-reader-bar-demo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "eleventy-plugin-reader-bar": "^0.1.2"
+  }
+}
